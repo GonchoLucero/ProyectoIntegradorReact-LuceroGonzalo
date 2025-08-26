@@ -1,0 +1,16 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    background-color: slategrey;
+    padding: 20px;
+    
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 26px;
+    
+}
