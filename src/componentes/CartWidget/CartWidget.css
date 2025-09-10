@@ -1,3 +1,31 @@
-.imgCarrito{
-    width: 50px;
+/* Widget del carrito */
+.cart-widget {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.imgCarrito {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.cart-widget:hover .imgCarrito {
+    transform: scale(1.1);
+}
+
+
+.cart-text {
+    margin-left: 0.5rem;
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
 }
