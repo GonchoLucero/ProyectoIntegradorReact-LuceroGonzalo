@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(135deg, #484a4e 0%, #ff0019 100%);
+    background: linear-gradient(90deg, #ff0a0a 0%, #a90a0a 50%, #272727 100%);
     padding: 1rem 2rem;
 }
 
@@ -12,12 +12,8 @@
     width: 100%;
 }
 
-.navbar-container h1 {
-    color: white;
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.logogiostore{
+    width: 100px;
 }
 
 .navbar-container a {
