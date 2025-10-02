@@ -1,11 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import "./App.css"
 import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer"
 import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer"
 import NavBar from "./componentes/NavBar/NavBar"
+import Footer from "./componentes/Footer/Footer"
 import { CarritoProvider } from "./context/CarritoContext"
 import Cart from "./componentes/Cart/Cart"
 import Checkout from "./componentes/Checkout/Checkout"
+import "./App.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
@@ -27,6 +29,7 @@ const App = () => {
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
       </Routes>
+      <Footer/>
     </CarritoProvider>
     </BrowserRouter>
       

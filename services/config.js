@@ -3,7 +3,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyANwaJK0HAyDD5S9HvpQiday2Yg_EYr_NY",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY ,
   authDomain: "finalcoderhouse-giostore.firebaseapp.com",
   projectId: "finalcoderhouse-giostore",
   storageBucket: "finalcoderhouse-giostore.firebasestorage.app",
@@ -16,7 +16,7 @@ const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app)
 
-const misProductos = [
+/*const misProductos = [
     {id:"1", nombre:"Botinero", precio: "10.000", img:"../public/img/botinero.jpg", idCat:"futbol", stock:7},
     {id:"2", nombre:"Chomba", precio: "30.000", img:"../public/img/chomba.jpg", idCat: "accesorios", stock:15},
     {id:"3", nombre:"Gorra", precio: "8.000", img:"../public/img/gorra.jpg", idCat: "futbol", stock:3},
@@ -46,4 +46,4 @@ const subirProductos = async () => {
     }
     };
 
-/*subirProductos()*/
+subirProductos()*/

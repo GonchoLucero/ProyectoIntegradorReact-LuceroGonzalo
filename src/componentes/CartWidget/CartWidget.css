@@ -1,4 +1,3 @@
-/* Widget del carrito */
 .cart-widget {
     position: relative;
     display: flex;
@@ -28,4 +27,19 @@
     color: white;
     font-weight: 500;
     font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    .cart-widget {
+        padding: 0.3rem 0.7rem;
+    }
+    
+    .imgCarrito {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .cart-text {
+        font-size: 0.8rem;
+    }
 }

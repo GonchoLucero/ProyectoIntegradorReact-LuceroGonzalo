@@ -1,9 +1,10 @@
-.navbar {
-    background: linear-gradient(90deg, #ff0a0a 0%, #a90a0a 50%, #272727 100%);
+.mi-navbar {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
     padding: 1rem 2rem;
+    border-bottom: 3px solid #dc3545;
 }
 
-.navbar-container {
+.mi-navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,15 +17,16 @@
     width: 100px;
 }
 
-.navbar-container a {
+.mi-navbar-container a {
     text-decoration: none;
     font-size: 1.6rem;
-    color: white;
+    color: #e0e0e0;
     font-weight: bold;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
-.navbar-nav {
+.mi-navbar-nav {
     display: flex;
     list-style: none;
     margin: 0;
@@ -32,20 +34,54 @@
     gap: 2rem;
 }
 
-.nav-item {
+.mi-nav-item {
     position: relative;
 }
 
 
-.nav-item a:hover {
+.mi-nav-item a:hover {
+    color: #dc3545;
+    padding-left: 0.5rem;
+}
+
+.mi-navbar-container a:hover h1 {
     color: gray;
 }
 
-.navbar-container a:hover h1 {
-    color: gray;
-}
-
-.navbar-cart {
+.mi-navbar-cart {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .mi-navbar {
+        padding: 1rem;
+    }
+    
+    .mi-navbar-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .logogiostore {
+        width: 70px;
+    }
+    
+    .mi-navbar-nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .mi-nav-item a {
+        font-size: 1.2rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mi-nav-item a {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+    }
 }
